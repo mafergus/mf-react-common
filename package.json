@@ -1,7 +1,15 @@
 {
   "name": "mf-react-common",
+  "description": "Common React components library",
   "version": "0.1.0",
   "private": true,
+  "author": "Matthew Ferguson",
+  "license": "MIT",
+  "main": "dist",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafergus/mf-react-common"
+  },
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -10,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "library": "webpack src/library --mode=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -21,5 +30,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
 }
