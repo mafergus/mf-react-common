@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { testColor } from './library/index.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ backgroundColor: testColor }}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

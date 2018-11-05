@@ -3,11 +3,12 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: {
-    'index.js': './src/library/index.js',
+    'footer/index.js': './src/library/ui/footer/index.js',
+    'app-bar/index.js': './src/library/ui/app-bar/index.js',
   },
   output: {
     path: path.resolve(__dirname, '.'),
-    filename: 'index.js',
+    filename: '[name]',
     library: '',
     libraryTarget: 'commonjs'
   },
@@ -24,6 +25,7 @@ module.exports = {
     alias: {
       'assets': path.resolve('./src/assets'),
       'components': path.resolve('./src/components'),
+      'library': path.resolve('./src/library'),
       'static': path.resolve('./src/static'),
       'util': path.resolve('./src/util'),
     },

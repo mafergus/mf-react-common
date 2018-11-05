@@ -2,23 +2,25 @@
   "name": "mf-react-common",
   "description": "Common React components library",
   "version": "0.1.0",
-  "private": true,
   "author": "Matthew Ferguson",
   "license": "MIT",
-  "main": "dist",
   "repository": {
     "type": "git",
     "url": "https://github.com/mafergus/mf-react-common"
   },
   "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "@material-ui/icons": "^3.0.1",
+    "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "library": "webpack src/library --mode=production",
+    "build-lib": "webpack --mode=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,8 +34,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
-    "webpack": "^4.24.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
   }

@@ -1,0 +1,12 @@
+.link {
+  a {
+    cursor: pointer;
+    font-weight: 300;
+    color: #C8CBCD;
+    text-decoration: none;
+    
+    &:hover {
+      color: #92979C;
+    }
+  }
+}
