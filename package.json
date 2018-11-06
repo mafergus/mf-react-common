@@ -1,7 +1,7 @@
 {
   "name": "mf-react-common",
   "description": "Common React components library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Matthew Ferguson",
   "license": "MIT",
   "repository": {
