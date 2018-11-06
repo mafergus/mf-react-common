@@ -5,7 +5,7 @@ import './link.scss';
 export default function Link({ children, to, ...otherProps }) {
   return (
     <div style={{ marginTop: 5, marginBottom: 5 }} className="link">
-      <a className="sm" href={to} {...otherProps}>{children}</a>
+      <a href={to} {...otherProps}>{children}</a>
     </div>
   );
 };
